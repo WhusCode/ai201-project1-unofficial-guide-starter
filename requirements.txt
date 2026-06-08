@@ -9,3 +9,17 @@ python-dotenv==1.0.1
 
 # Document ingestion — add if your documents/ folder contains .pdf files:
 # pdfplumber==0.11.4
+
+# Chunking (build_chunks.py)
+langchain-text-splitters>=0.3.0
+transformers>=4.40.0
+
+# Embedding + vector store (build_embeddings_chroma.py)
+sentence-transformers>=3.0.0
+chromadb>=0.5.0
+
+# Generation (rag_query_ollama.py) - local LLM via Ollama
+ollama>=0.3.0
+
+# Web interface (app.py)
+gradio>=6.9.0
