@@ -1,162 +1,240 @@
 # The Unofficial Guide — Project 1
 
-> **How to use this template:**
-> Complete each section *after* you've built and tested the corresponding part of your system.
-> Do not write placeholder text — if a section isn't done yet, leave it blank and come back.
-> Every section below is required for submission. One-liners will not receive full credit.
+A retrieval-augmented generation (RAG) system that answers questions about
+*Hollow Knight: Silksong* using a corpus of community guides, wikis, and walkthroughs. You
+ask a question in a web UI; the system retrieves the most relevant chunks from its document
+store and a language model answers using only those chunks, citing the sources it drew from.
 
 ---
 
 ## Domain
 
-<!-- What topic or category of knowledge does your system cover?
-     Why is this knowledge valuable, and why is it hard to find through official channels?
-     Example: "Student reviews of CS professors at [university] — useful because official
-     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+This system covers **guides and walkthroughs for *Hollow Knight: Silksong*** — boss
+strategies, ability/skill unlocks, tools, enemy (Hunter's Journal) entries, progression
+routes, and beginner mechanics.
+
+This knowledge is valuable because *Silksong* is a deliberately opaque game: it withholds
+explanations by design, expecting players to learn through experimentation, and the official
+channels (the game itself, Team Cherry's marketing) intentionally provide almost no guidance
+on how systems work or where things are. As a result, the practical knowledge that helps
+players actually progress — which boss drops which tool, where an ability is unlocked, what
+order to tackle areas in — lives entirely in player-made resources scattered across review
+sites, wikis, forums, and video transcripts. No single official source collects it, and
+because the game is recent, even the community resources are incomplete and still being
+filled in. This project consolidates ten of those community sources into one searchable,
+grounded assistant.
 
 ---
 
 ## Document Sources
 
-<!-- List every source you collected documents from.
-     Be specific: include URLs, subreddit names, forum thread titles, or file names.
-     Aim for variety — sources that together cover different subtopics or perspectives. -->
-
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | DualShockers — Complete Guide & Walkthrough (guide directory) | Web article | https://www.dualshockers.com/hollow-knight-silksong-complete-guide-walkthrough/ → `documents/01_dualshockers.txt` |
+| 2 | Polygon — Secret permadeath (Steel Soul) mode | Web article | https://www.polygon.com/silksong-permadeath-hard-mode-steel-soul-how-to-unlock/ → `documents/02_polygon.txt` |
+| 3 | MapGenie — Silksong Maps | Interactive map (text descriptions) | https://mapgenie.io/hollow-knight-silksong → `documents/03_mapgenie.txt` |
+| 4 | Fextralife — All Bosses Guide | Wiki | https://hollowknightsilksong.wiki.fextralife.com/Bosses → `documents/04_fextralife.txt` |
+| 5 | Steam Community — All Hunter's Journal Entries (True Hunter guide) | Community guide | https://steamcommunity.com/sharedfiles/filedetails/?id=3577313146 → `documents/05_steam.txt` |
+| 6 | Game8 — Beginner's Guide: Tips and Tricks | Web article | https://game8.co/games/Hollow-Knight-Silksong/archives/546274 → `documents/06_game8.txt` |
+| 7 | Nintendo Life — Progression Guide: Recommended Route | Web article | https://www.nintendolife.com/guides/hollow-knight-silksong-progression-guide-recommended-route → `documents/07_nintendolife.txt` |
+| 8 | YouTube — How to Unlock All Act 1 Traversal Abilities in Order | Video transcript | https://youtu.be/YUAI7Q8y23U → `documents/08_youtube.txt` |
+| 9 | Reddit (r/HollowKnight) — 100% Completion Requirements thread | Forum thread | https://www.reddit.com/r/HollowKnight/comments/1ndrak6/ → `documents/09_reddit.txt` |
+| 10 | Rock Paper Shotgun — The best Tools in Silksong | Web article | https://www.rockpapershotgun.com/the-best-tools-in-hollow-knight-silksong → `documents/10_rockpapershotgun.txt` |
+
+The sources were chosen for variety of subtopic and shape: list-style references (the boss
+guide, the 237-entry Hunter's Journal, the tools rankings), flowing prose walkthroughs (the
+progression guide, the ability-unlock transcript, the beginner tips), and a community forum
+thread, so the corpus covers both "what exists" lookups and "how do I" explanations.
 
 ---
 
 ## Chunking Strategy
 
-<!-- Describe your chunking approach with enough specificity that someone else could reproduce it.
-     Include:
-     - Chunk size (characters or tokens) and why that size fits your documents
-     - Overlap size and why (or why not) you used overlap
-     - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
-     - What your final chunk count was across all documents -->
+**Chunk size:** 128 tokens, counted with the embedding model's own tokenizer via LangChain's
+`RecursiveCharacterTextSplitter.from_huggingface_tokenizer`, so chunk sizes line up with what
+the embedder actually processes.
 
-**Chunk size:**
+**Overlap:** 30 tokens, used so that a fact sitting near a boundary (a boss's location and its
+drop, or a multi-step strategy) is not cleanly severed between two chunks.
 
-**Overlap:**
+**Why these choices fit your documents:** The size was tuned against the corpus, not guessed.
+Most of these documents are short, self-contained facts — one boss per line, one tool per
+entry, one journal bug per line — rather than long prose. Large chunks bury an individual
+fact among dozens of unrelated ones, which dilutes the embedding and makes precise retrieval
+impossible, so smaller chunks isolate each fact for matching. A hard constraint also pushed
+the size down: the embedding model truncates input past 256 tokens, so oversized chunks would
+only be half-embedded; and the initial 512-token run produced just 44 chunks (below the
+50-chunk minimum), confirming chunks were too large. 128/30 keeps every chunk fully embedded
+and isolates individual facts. Preprocessing before chunking: HTML entities are unescaped,
+residual HTML/XML tags are stripped, common boilerplate lines (nav, "read more", cookie/ad
+text) are removed, whitespace and blank-line runs are collapsed, and empty/whitespace-only
+chunks are filtered out before embedding.
 
-**Why these choices fit your documents:**
-
-**Final chunk count:**
+**Final chunk count:** 162 chunks across the 10 documents.
 
 ---
 
 ## Embedding Model
 
-<!-- Name the embedding model you used and explain your choice.
-     Then answer: if you were deploying this system for real users and cost wasn't a constraint,
-     what tradeoffs would you weigh in choosing a different model?
-     Consider: context length limits, multilingual support, accuracy on domain-specific text,
-     latency, and local vs. API-hosted. -->
+**Model used:** `sentence-transformers/all-mpnet-base-v2`, run locally with no API key and no
+rate limit. The project started on the recommended `all-MiniLM-L6-v2` but switched to
+`all-mpnet-base-v2` after testing showed MiniLM could not connect paraphrased queries to the
+right chunks (see Failure Case Analysis). mpnet's larger 768-dimension embeddings give
+noticeably better semantic matching on this corpus.
 
-**Model used:**
-
-**Production tradeoff reflection:**
+**Production tradeoff reflection:** With cost off the table, the biggest axis is **accuracy on
+domain-specific text** — game guides are dense with proper nouns (boss names like
+"Skarrsinger Karmelita", abilities like "Silk Soar") that general models tokenize awkwardly,
+so a larger or corpus-fine-tuned model would resolve those better. **Context length** matters
+because a few sources (the YouTube transcript, long walkthrough sections) carry multi-sentence
+strategies that a 256/384-token model truncates; a long-context embedder (e.g. OpenAI's
+`text-embedding-3`, 8k tokens) would allow larger chunks without losing the tail.
+**Latency** is the cost of going bigger: mpnet is already several times slower than MiniLM,
+and an API-hosted model adds network round-trips that hurt an interactive UI.
+**Multilingual support** is irrelevant here (the corpus is all English) but would matter for a
+localized guide. **Local vs. API-hosted** is the deployment lever: local models are free and
+private but capped by user hardware, while API models offer higher accuracy and no local
+compute at the cost of per-query fees and an external dependency. For this project, local
+mpnet was the right balance of accuracy and zero cost.
 
 ---
 
 ## Grounded Generation
 
-<!-- Explain how your system enforces grounding — how does it prevent the LLM from answering
-     beyond the retrieved documents?
-     Describe both your system prompt (what instruction you gave the model) and any structural
-     choices (e.g., how you formatted the context, whether you filtered low-relevance chunks).
-     Do not just say "I told it to use the documents" — show the actual instruction or explain
-     the mechanism. -->
+**System prompt grounding instruction:** The model receives this system prompt, which
+*requires* grounding rather than merely suggesting it:
 
-**System prompt grounding instruction:**
+> "You are a Hollow Knight: Silksong guide assistant. Answer the user's question using ONLY
+> the numbered sources provided in the context. Do not use outside knowledge. If the sources
+> do not contain enough information to answer, say clearly that the provided sources do not
+> cover it — do not guess or invent details. Keep answers concise and specific."
 
-**How source attribution is surfaced in the response:**
+Two structural choices reinforce this. The retrieved chunks are formatted into a **numbered,
+source-labeled context block** (each prefixed with its source filename, chunk index, and
+distance), and the user turn ends with "Answer using only the context above," anchoring the
+model to a finite, visible set of evidence rather than its training memory. The prompt also
+explicitly authorizes refusal, which is what makes the system decline on uncovered questions
+instead of fabricating a plausible answer.
+
+**How source attribution is surfaced in the response:** Attribution is **guaranteed
+programmatically, not left to the model.** After generation, the code builds the source list
+directly from the retrieval metadata —
+`f"{m['source']} (chunk #{m['chunk_index']}, distance {d:.3f})"` — and displays it in a
+separate "Retrieved from" field in the Gradio UI. The cited sources therefore always reflect
+exactly what was retrieved, even if the language model omits them from its prose.
 
 ---
 
 ## Evaluation Report
 
-<!-- Run your 5 test questions from planning.md through your system and record the results.
-     Be honest — a partially accurate or inaccurate result that you explain well is more
-     valuable than a suspiciously perfect result. -->
+Run on the final system (ChromaDB retrieval with `all-mpnet-base-v2`, k=5, local generation).
 
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | How do I increase the total amount of silk I have? | Collect Spool Fragments; two combine to add one silk. | Declined — stated the sources don't explain how to increase total silk, noting extra silk is mentioned only for healing/abilities. | Partially relevant | Inaccurate (honest decline — corpus lacks the specific fact) |
+| 2 | How many bosses are there? | 44 main bosses (and 4 mini-bosses). | "44 main bosses and 4 mini-bosses have been discovered," cited to `04_fextralife.txt`. | Relevant (top distance 0.330) | Accurate |
+| 3 | What is the Father of the Flame and how do I beat it? | Detailed fight strategy (destroy lanterns/arms, dodge fireballs, hit the core). | Declined — stated the sources don't contain a Father of the Flame strategy. | Off-target (best distance 0.567) | Inaccurate (honest decline — coverage gap) |
+| 4 | What is the first skill I acquire? | The Silkspear. | "The first ability you acquire is the Silkspear," cited to `08_youtube.txt`. | Relevant | Accurate |
+| 5 | What tool buffs my Silk Skills? | The Volt Filament. | "Blue Tools buff Silk Skills," citing the Blue Tools category — did not name the Volt Filament specifically. | Partially relevant (distance 0.349 on the category chunk, not the specific tool) | Partially accurate |
 
-**Retrieval quality:** Relevant / Partially relevant / Off-target  
-**Response accuracy:** Accurate / Partially accurate / Inaccurate
+**Summary:** 2 accurate (Q2, Q4), 1 partially accurate (Q5), 2 honest declines on
+under-covered questions (Q1, Q3). The system never hallucinated — every question it could not
+answer from the corpus, it declined rather than invented.
 
 ---
-
 ## Failure Case Analysis
 
-<!-- Identify at least one question where retrieval or generation did not work as expected.
-     Write a specific explanation of *why* it failed, tied to a part of the pipeline.
+**Question that failed:** "What is the Father of the Flame and how do I beat it in Silksong?" (Q3)
 
-     "The answer was wrong" is not an explanation.
+**What the system returned:** The system declined, stating that the provided sources do not
+contain a strategy for beating the Father of the Flame. The best retrieved chunk sat at a
+distance of 0.567 — well above the ~0.5 relevance bar — and the retrieved chunks were generic
+boss-overview and game-mechanic text, none of which described this specific fight.
 
-     "The relevant information was split across a chunk boundary, so retrieval returned
-     only half the context — the model didn't have enough to answer correctly" is an explanation.
+**Root cause (tied to a specific pipeline stage):** This is a **coverage gap rooted in the
+document ingestion stage**, not a retrieval or embedding failure. The ten sources I collected
+include a boss *directory* (guide titles only), a boss list with each boss's *location and
+drop*, ability walkthroughs, and a beginner-tips page — but none of them contains the actual
+per-boss fight strategy prose (attack patterns, phase transitions, how to counter each move)
+for the Father of the Flame. Because that information was never ingested, it exists in no
+chunk, so no amount of retrieval or generation tuning can produce it. Retrieval behaved
+correctly: it returned the topically-nearest chunks it had and reported high distances,
+signalling weak matches, and generation correctly refused rather than fabricating a strategy
+from the model's training knowledge.
 
-     "The embedding model treated the professor's nickname as out-of-vocabulary and returned
-     results from an unrelated review" is an explanation. -->
+A clear piece of evidence that this is a coverage gap and not a retrieval failure: the system
+*can* answer a different question about the same boss. Asked "What does the Father of the Flame
+drop?", it correctly returns "the Wispfire Lantern Tool," cited to `04_fextralife.txt`, because
+that fact *is* present in the corpus (in the boss list). The system answers the parts the
+sources cover (the drop) and declines the parts they don't (the strategy) — its refusals track
+the corpus boundary precisely rather than being random failures.
 
-**Question that failed:**
+A useful contrast is Q5 ("what tool buffs my Silk Skills"), which is the opposite kind of
+failure: there the answer (the Volt Filament) *is* in the corpus, but the embedding and
+chunking stages combined to rank a generic Blue Tools category chunk above the specific
+Volt Filament line, so it was present-but-not-surfaced. Q3 is absent; Q5 is unsurfaced —
+two different failures needing two different fixes.
 
-**What the system returned:**
-
-**Root cause (tied to a specific pipeline stage):**
-
-**What you would change to fix it:**
+**What you would change to fix it:** For Q3's coverage gap, the only real fix is at the
+ingestion stage — add a source that actually contains the Father of the Flame fight strategy
+(for example, a dedicated boss-strategy guide page), so the information enters the corpus and
+becomes retrievable. No retrieval, embedding, or generation tuning can surface information that
+was never collected. For the contrasting Q5 retrieval failure, the fix is different: document
+enrichment (prepending a keyword header like "Tool: Volt Filament. Buffs Silk Skills." to each
+tool chunk) or hybrid retrieval (combining vector search with a BM25 keyword search) to rank
+the specific answer-bearing chunk above the generic category chunk.
 
 ---
 
 ## Spec Reflection
 
-<!-- Reflect on how planning.md shaped your implementation.
-     Answer both questions with at least 2–3 sentences each. -->
+**One way the spec helped you during implementation:** The `planning.md` Chunking Strategy and
+Retrieval Approach sections forced me to commit to concrete, reproducible parameters (chunk
+size, overlap, embedding model, top-k) before writing code, so implementation became a matter
+of wiring up decisions I had already reasoned through rather than improvising. It also gave me
+a baseline to measure against: when retrieval underperformed, I could see exactly which
+parameter I was changing and why, instead of tweaking blindly. The spec's "if you change the
+numbers, say why" requirement turned each tuning step into a documented, defensible decision.
 
-**One way the spec helped you during implementation:**
-
-**One way your implementation diverged from the spec, and why:**
+**One way your implementation diverged from the spec, and why:** I diverged on three
+parameters, each driven by test evidence. Chunk size dropped from the planned 512/100 to
+128/30, because the embedding model truncates past 256 tokens (so 512-token chunks would be
+half-embedded) and the first run produced only 44 chunks, below the 50-chunk floor. The
+embedding model changed from `all-MiniLM-L6-v2` to `all-mpnet-base-v2` after MiniLM failed to
+connect the "what tool buffs Silk Skills" query to the right chunk. And generation runs on a
+local Ollama model (`llama3.2`) instead of the recommended Groq API, to keep the system
+entirely free and local with no API key. The vector store is ChromaDB with cosine distance,
+one of the two stores the planning allowed.
 
 ---
 
 ## AI Usage
 
-<!-- Describe at least 2 specific instances where you used an AI tool during this project.
-     For each: what did you give the AI as input, what did it produce, and what did you
-     change, override, or direct differently?
-
-     "I used Claude to help me code" is not sufficient.
-     "I gave Claude my Chunking Strategy section from planning.md and asked it to implement
-     chunk_text(). It returned a function using a fixed character split. I overrode the
-     chunk size from 500 to 200 because my documents are short reviews, not long guides." -->
-
 **Instance 1**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* My `planning.md` Chunking Strategy section (512-token chunks, 100
+  overlap, `RecursiveCharacterTextSplitter`) and my list of source file types, and asked it to
+  implement the ingestion + chunking script.
+- *What it produced:* A `build_chunks.py` that loads the `.txt` files, cleans them (HTML
+  entities, tag stripping, boilerplate removal), splits them token-based using the embedding
+  model's tokenizer at my specified 512/100, and prints sample chunks plus a count.
+- *What I changed or overrode:* After the first run produced only 44 chunks (below the 50-chunk
+  floor) and the tokenizer warned about sequences exceeding the model's limit, I overrode the
+  chunk size to 256/50 and then 128/30, because my sources are short fact-style entries rather
+  than long prose and the embedder truncates past 256 tokens. I also had it add an empty-chunk
+  filter. The final 128/30 setting produced 162 well-isolated chunks.
 
 **Instance 2**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* The retrieval output for my five evaluation questions, pointing out
+  that "what tool buffs my Silk Skills" was not surfacing the Volt Filament chunk even though
+  it's in the corpus.
+- *What it produced:* An explanation that the failure was a lexical–semantic mismatch ("buffs"
+  vs. the chunk's "improves damage") compounded by keyword dilution, with MiniLM leaning too
+  heavily on surface vocabulary. It proposed, in order of effort, raising k, enriching chunk
+  text with keywords, swapping to `all-mpnet-base-v2`, and hybrid retrieval.
+- *What I changed or overrode:* I chose the model swap to `all-mpnet-base-v2` and re-ran the
+  comparison rather than accepting the failure or jumping to hybrid retrieval. I confirmed it
+  improved the result (the Blue Tools chunk surfaced) but verified it still didn't fully
+  resolve the specific-tool retrieval, and I documented that remaining limitation honestly in
+  the Failure Case Analysis rather than hiding it.
