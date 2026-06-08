@@ -93,7 +93,7 @@ Its most dangerous attack comes after you have destroyed all of its lantern arms
 
 Focus on breaking each lantern one by one, avoid the simple tracking fireballs, and stay calm, it uses the flame barrage. |
 | 4 | What is the first skill I acquire in Silksong? | The Silkspear is Hornet's very first skill you can unlock in Silksong. |
-| 5 | What tool buffs my Silk Skills in Silksong? |  The Volt Filament is an offensive Blue Tool that charges Silk Skills with electricity, essentially buffing them. |
+| 5 | What tool buffs my Silk Skills with electricity in Silksong? |  The Volt Filament is an offensive Blue Tool that charges Silk Skills with electricity. |
 
 ---
 
@@ -121,7 +121,7 @@ Focus on breaking each lantern one by one, avoid the simple tracking fireballs, 
 ┌─────────────────────┐     ┌──────────────────────────┐      ┌─────────────────────────┐
 │  Document Ingestion │────▶         Chunking           ───▶ │   Embedding + Vector    │
 │  BeautifulSoup /    │     │  RecursiveCharacter      │      │   Store                 │
-│  requests, pdfminer │     │  TextSplitter            │      │   all-mpnet-base-v2      │
+│  requests, pdfminer │     │  TextSplitter            │      │   all-mpnet-base-v2     │
 │                     │     │  128 tok · 30 overlap    │      │   + FAISS / ChromaDB    │
 └─────────────────────┘     └──────────────────────────┘      └────────────┬────────────┘
                                                                            │
