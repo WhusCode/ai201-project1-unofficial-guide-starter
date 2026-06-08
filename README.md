@@ -142,40 +142,47 @@ under-covered questions (Q1, Q3). The system never hallucinated — every questi
 answer from the corpus, it declined rather than invented.
 
 ---
-
 ## Failure Case Analysis
 
-**Question that failed:** "What tool buffs my Silk Skills in Silksong?" (Q5)
+**Question that failed:** "What is the Father of the Flame and how do I beat it in Silksong?" (Q3)
 
-**What the system returned:** Instead of naming the **Volt Filament** (the correct answer,
-present in `10_rockpapershotgun.txt` as "Volt Filament — adds a pink lightning effect that
-drastically improves the damage of all Silk Skills"), the system returned the more general
-"Blue Tools buff Silk Skills," citing the Blue Tools *category* description. The specific
-answer-bearing chunk never entered the top-5 retrieval set.
+**What the system returned:** The system declined, stating that the provided sources do not
+contain a strategy for beating the Father of the Flame. The best retrieved chunk sat at a
+distance of 0.567 — well above the ~0.5 relevance bar — and the retrieved chunks were generic
+boss-overview and game-mechanic text, none of which described this specific fight.
 
-**Root cause (tied to a specific pipeline stage):** This is a **retrieval failure**, not a
-coverage gap — the answer is in the corpus, but two stages combined to keep it out of the
-results. (1) **Embedding stage / lexical–semantic mismatch:** the query asks what "buffs"
-Silk Skills, while the Volt Filament chunk says it "improves the damage" of Silk Skills. The
-model must bridge "buffs" ↔ "improves damage"; with `all-MiniLM-L6-v2` it couldn't, and the
-chunk didn't appear in the top 5 at all. Switching to `all-mpnet-base-v2` improved this enough
-to surface the Blue Tools *category* chunk (whose text literally repeats "buffs" and "Silk
-Skills") but still not the Volt Filament line itself. (2) **Chunking stage / keyword
-dilution:** the category-intro chunk packs the query's keywords densely, so it out-ranks the
-Volt Filament chunk, which leads with "pink lightning effect" before reaching "Silk Skills" —
-the specific fact loses to the generic one on surface vocabulary. (A useful contrast is Q3,
-Father of the Flame, which looks similar but is a true **coverage gap**: no chunk contains the
-strategy at all. Q5 is present-but-not-surfaced; Q3 is simply absent — different failures
-needing different fixes.)
+**Root cause (tied to a specific pipeline stage):** This is a **coverage gap rooted in the
+document ingestion stage**, not a retrieval or embedding failure. The ten sources I collected
+include a boss *directory* (guide titles only), a boss list with each boss's *location and
+drop*, ability walkthroughs, and a beginner-tips page — but none of them contains the actual
+per-boss fight strategy prose (attack patterns, phase transitions, how to counter each move)
+for the Father of the Flame. Because that information was never ingested, it exists in no
+chunk, so no amount of retrieval or generation tuning can produce it. Retrieval behaved
+correctly: it returned the topically-nearest chunks it had and reported high distances,
+signalling weak matches, and generation correctly refused rather than fabricating a strategy
+from the model's training knowledge.
 
-**What you would change to fix it:** For Q5, **document enrichment** — prepend a short keyword
-header to each tool chunk at build time (e.g. "Tool: Volt Filament. Buffs Silk Skills.") so
-the answer-bearing chunk carries the query's vocabulary and stops losing to the category
-intro. More broadly, **hybrid retrieval** (combining vector search with a BM25 keyword search
-and merging rankings) directly fixes the "exact words are in the chunk but ranked low" class
-of failure. For Q3's coverage gap, the only real fix is adding a source that actually contains
-the Father of the Flame strategy — no retrieval tuning can surface information that isn't in
-the corpus.
+A clear piece of evidence that this is a coverage gap and not a retrieval failure: the system
+*can* answer a different question about the same boss. Asked "What does the Father of the Flame
+drop?", it correctly returns "the Wispfire Lantern Tool," cited to `04_fextralife.txt`, because
+that fact *is* present in the corpus (in the boss list). The system answers the parts the
+sources cover (the drop) and declines the parts they don't (the strategy) — its refusals track
+the corpus boundary precisely rather than being random failures.
+
+A useful contrast is Q5 ("what tool buffs my Silk Skills"), which is the opposite kind of
+failure: there the answer (the Volt Filament) *is* in the corpus, but the embedding and
+chunking stages combined to rank a generic Blue Tools category chunk above the specific
+Volt Filament line, so it was present-but-not-surfaced. Q3 is absent; Q5 is unsurfaced —
+two different failures needing two different fixes.
+
+**What you would change to fix it:** For Q3's coverage gap, the only real fix is at the
+ingestion stage — add a source that actually contains the Father of the Flame fight strategy
+(for example, a dedicated boss-strategy guide page), so the information enters the corpus and
+becomes retrievable. No retrieval, embedding, or generation tuning can surface information that
+was never collected. For the contrasting Q5 retrieval failure, the fix is different: document
+enrichment (prepending a keyword header like "Tool: Volt Filament. Buffs Silk Skills." to each
+tool chunk) or hybrid retrieval (combining vector search with a BM25 keyword search) to rank
+the specific answer-bearing chunk above the generic category chunk.
 
 ---
 
