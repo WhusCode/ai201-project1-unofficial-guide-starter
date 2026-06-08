@@ -1,0 +1,85 @@
+There are 53 Tools in the game. The best of them make Hornet far deadlier, and many provide
+synergies when equipped together, opening up buildcrafting opportunities.
+
+
+RED TOOLS (active, offensive)
+
+Red Tools are active and offensive. Each costs its usage bar to activate; when the bar is
+depleted the Tool becomes unusable until refreshed by spending Shell Shards at a resting
+bench. With the Architect Crest, a specific input refreshes a Tool's bar on the go.
+
+Sting Shard - Places a small spike trap in the air; when enemies touch it the spikes extend
+and deal solid damage. A bit more expensive to use than some damaging Tools, but its
+early-game availability via the merchant Forge Daughter makes it a strong pick. Littering an
+arena with Sting Shards works well against bosses in close quarters.
+
+Flea Brew - Increases your movement and attack speed for a short duration with no other
+effects. One use vastly bumps up damage potential, especially with high-attack-speed Crests
+like the Beast or Wanderer. The movement-speed boost is jarring at first but makes moving
+around in a fight much easier once you adjust.
+
+Delver's Drill - As long as you are above the enemy, one of the best burst-damage Tools in
+the game, even more so with an upgraded Tool pouch. It shoots Hornet down at high speed and
+drills into enemies up to five times on contact. Can kill most trash mobs in a single use
+and makes tanky bosses less laborious.
+
+Silkshot - Obtained from the shop near the top of Mount Fay; effectively a railgun. Fires a
+laser beam that instantly reaches maximum range, ignores enemy armour, and pierces through
+multiple foes. Hornet briefly hangs in the air when firing, so it doubles as a platforming
+tool alongside its high damage.
+
+Flintslate - "Superheats" your Needle, increasing its damage output by a full 50% for a
+brief duration. Like Binding and the Silkshot, using it midair makes Hornet hang, which is
+useful for avoiding a collision with an enemy on your descent.
+
+
+BLUE TOOLS (passive buffs)
+
+Blue Tools provide passive buffs and bonuses when equipped, and can change or improve how you
+use Silk, particularly the damage and effects of Silk Skills. There are no drawbacks, but no
+Crest has more than three Blue slots, so you can never equip all of them at once.
+
+Injector Band - Makes Binding to heal take less time. The faster heal saves you from wasting
+Silk by getting hit mid-Bind, which happens at least a few times per playthrough.
+
+Multibinder - Splits the Binding heal animation into two parts, each Bind healing two Masks,
+for four health restored total. Binding takes almost twice as long; mitigate this by pairing
+it with the Injector Band, whose effects complement it.
+
+Volt Filament - Adds a pink lightning effect that drastically improves the damage of all Silk
+Skills, plus a brief minor damage-over-time effect. Valuable in the later game as enemy
+health pools grow. (Obtained by killing the big shocking enemy near the Sands of Karak path -
+i.e. Voltvyrm.)
+
+Claw Mirrors - A Binding-centric Tool (single and dual versions). When you Bind to heal, it
+causes a sparkling explosion around Hornet that damages nearby enemies. Works with the
+Multibinder (two explosions in quick succession). With the Warding Bell equipped, that Tool's
+damage-mitigation effect makes the Mirror explosion much larger.
+
+Longclaw - Extends the range of your Needle regardless of equipped Crest, helping with
+attacks that fall just short. Especially appreciated on short-range Crests like the Wanderer,
+but longer ones like the active Beast Crest benefit too. The extra range lets you keep tough
+bosses at arm's length while still dealing damage. (Reward for completing the Broodfeast quest
+for the Huntress.)
+
+
+YELLOW TOOLS (utility and quality-of-life)
+
+Yellow Tools are a catch-all: some give buffs and bonuses, others offer quality-of-life
+exploration features, and a select few have powerful battle-turning effects.
+
+Compass - Shows Hornet's current location on the map (provided the area map is unlocked), and
+her icon moves with her as she explores with the map open. Not strictly necessary, but saves
+a few seconds whenever you'd otherwise guess your position in Pharloom.
+
+Weighted Belt - Greatly reduces knockback from enemy attacks (some knockback remains). Helps
+Hornet withstand hits more efficiently and avoid being pushed into hazards, letting you stand
+your ground or keep up an offensive without bouncing around the arena.
+
+Magnetite Dice - Gives a small chance to negate a single hit entirely (no damage), though you
+still take the knockback and gain the invincibility frames. Pairs reasonably with the
+Weighted Belt. Luck-based, so don't rely on it, but it can save an otherwise lost fight.
+
+Ascendant's Grip - After getting the Cling Grip ability, this Tool lets you stick to walls
+without sliding down, so you can line up your next jump more carefully. Makes trickier
+platforming sections much less frustrating.

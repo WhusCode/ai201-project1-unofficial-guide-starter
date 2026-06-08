@@ -1,0 +1,70 @@
+This is a guide trying to summarize what is required for 100% in Hollow Knight: Silksong. While its mostly completed, it is still being updated based on feedbacks received on comments.
+
+Apologies if there's already a guide like this, but I couldn't find it, which made my 100% run a lot more complex that it was likely needed.
+
+And since probably more people are starting to finish the game and will start wondering what's needed for the 100% completion and what isn't, and the game doesn't let it clear as far as I know, so I'll try to list the requirements below. If I forgot any, feel free to correct me in comments!
+
+REQUIRED
+
+All Crests
+
+All 57 Tools (which also means all Craftmetals)
+
+All Crafting Kit Upgrades
+
+All side quests (board quests and NPC quests) that gives new tools, masks, fragments, upgrades, or ar required for story progression
+
+Binding Eva (sources I could find as of now mention having finding all 7 optional Crests + 15 memory lockets as the requirements for it. Iirc, there are 20 lockets in total. Try using the lockets as well)
+
+All Silk Skills
+
+All ability upgrades (i.e double jump, etc)
+
+All fleas (required for Egg of Fleelia tool)
+
+All Masks
+
+All Spool Fragments
+
+All Needle Upgrades (uncertain on this one so I'll leave it last, but you need the quests that gives the 3 Oils anyways)
+
+Everbloom (acquired from the snails, needed to fight the final boss. Counts as an ability)
+
+NOT REQUIRED
+
+Cursed Ending
+
+Tool Upgrades (some tools can be upgraded)
+
+Minigames (except the Flea one for the questline)
+
+Bellheart Delivieries (except the one for the Pale Oil quest)
+
+Housing Furniture
+
+Hunter Log (Bestiary, whatever you may call it)
+
+Mementos (accessed from insideyour Bellhome)
+
+Materium (accessed from insideyour Bellhome)
+
+Any NPC dialogues/chains that don't result in a "required" item (i.e Seth questline)
+
+Any Hidden Boss that don't result in a "required" item (i.e Crawfather, Shakra, etc)
+
+Any hidden map zone, segment or shortcut that doesn't result in a "required item"
+
+Extra Arenas (some arenas reset in act 3 and need to be done again with cursed enemy variants, but there are usually ways around them and they usually don't give required items for 100%)
+
+General Tips
+
+Quitting to the menu puts you back at the last bench you rested (outside of after acquiring new abilities, as those counts as checkpoints).
+
+While Crawfather isn't needed, it gives an item that passively generates Rosaries once installed outside your Bellhome, so he should be killed ASAP. It could remove any potential Rosary farming you'd need to.
+
+Leftmost bench in Citadel below the High Halls is a great place to farm Rosaries in Act 3 (6k+ per hour). Run to the bench, kill the 3 enemies, return, repeat. Use the super speed tool to speed it up. The long hall in Whiteward also seems to be a great place, offering up to 10k/h (requires quitting to the menu after every run).
+
+Shards aren't consumed for tools used inside dream sections (accessed with the song in Act 3). Those are great tool testing grounds.
+
+Can convert Rosaries into Shards at the Deep Docks merchant (buy shard packs for 50 Rosaries). Other merchants like the ones at Bellheart and Songclave (possibly some others as well) also offer those.
+

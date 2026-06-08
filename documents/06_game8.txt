@@ -1,0 +1,45 @@
+TIP: Practice the Hit and Run Tactic
+General combat in Silksong revolves around a hit-and-run tactic: hit the enemy at least
+once, then immediately move away to reposition. Beginners should practice this on regular
+mobs until they get used to the rhythm of combat. This applies to most encounters, normal
+enemies and bosses alike. Staying alive matters more than dealing damage, and practicing
+caution even in the early game helps with harder challenges later.
+ 
+ 
+TIP: Run Into Walls and Open Every Switch
+When exploring, check every wall and open every switch for possible secrets. Running into
+walls can reveal hidden rooms containing items, secret paths, or Rosaries, and opening
+switches usually removes exploration obstacles like locked gates and elevators. If
+something can break, it is probably meant to break; this often applies to walls and vines
+that open shortcuts, which is helpful when revisiting an area later.
+ 
+ 
+TIP: Heal or Bind Only When Necessary
+Binding (healing) fully depletes your Silk. While useful, it leaves you vulnerable because
+you are trading health for ability use until Silk recharges. Since the early game has few
+uses for Silk, use it only when necessary or when you can quickly replenish it. You can
+also be interrupted while Binding: an interruption cancels the heal but still fully
+depletes the Silk. Find a safe spot or moment in combat where completing a Bind is
+guaranteed.
+ 
+ 
+TIP: Use the Cocoon as Emergency Silk
+When Hornet dies, she leaves behind a Cocoon at her death location and respawns at the
+last bench rested on. Breaking this Cocoon restores Hornet's Silk (and the Rosaries lost
+from the previous death) for healing or abilities. Instead of breaking it immediately,
+treat the Cocoon as an extra spool of Silk. This is especially useful in later boss
+encounters, where the extra Silk can provide an emergency heal or ability use.
+ 
+ 
+TIP: Use Rosary Strings to Avoid Losing Rosaries
+Rosaries are the main currency in Silksong and are lost on death. You can avoid losing
+them by using Rosary Strings collected in Pharloom, or by paying a fee to certain vendors
+to secure Rosaries to a string. Strung Rosaries cannot be spent without breaking the
+string, so use this when expecting long expeditions without frequent vendor visits, or
+when tackling unknown areas or difficult platforming sections.
+ 
+ 
+TIP: Acquire the Maps ASAP
+Getting an area's Map as soon as possible is a necessity when exploring somewhere new.
+Locate Shakra when entering a new area and purchase all the map necessities to keep track
+of your progress.

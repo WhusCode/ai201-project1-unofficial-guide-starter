@@ -1,0 +1,96 @@
+How to Spot Bosses in Silksong?
+Boss fights in Hollow Knight: Silksong can be easy to miss at first, but there are several clear signs that tell you when a boss is already in front of you. The most reliable sign is the name display. Whenever you face a main boss, their name will appear in the lower-left corner of the screen as soon as the fight starts. For example, if you meet an enemy and a name like Moss Mother appears in that spot, it is guaranteed to be a boss encounter.
+
+
+
+Another key signal is the scream. Bosses always let out a loud cry before the fight begins, warning you that the battle is about to start. They often release a second scream when they are defeated or changing phases, marking the end of the fight.
+
+Boss arenas also stand out from the rest of the game. A boss usually waits in a room or open space that feels different from the normal path you have been exploring. These areas may look larger, more decorated, or simply more complicated than the surrounding tunnels, giving you a clear hint that something important is coming.
+
+By watching for the name popup, listening for the opening scream, and noticing a change in the environment, you can quickly tell when you are about to face one of Silksong's many challenging bosses.
+
+Do Bosses have health bars in Silksong?
+One thing that makes bosses in Hollow Knight Silksong different from those in many other action or RPG games is the lack of a visible health bar. During a boss fight, you will not see any gauge or meter showing how much life the enemy has left. Instead, you must keep attacking until the boss reacts in specific ways.
+
+A boss will often let out a loud scream when something important happens. This scream can mean two things: either the boss has been defeated, or it is about to enter a new phase of the fight. Some bosses gain new moves or become more aggressive after this scream, so be ready to adapt.
+
+Even without a health bar, you can still get a sense of a boss's remaining strength by watching its behavior. As the battle goes on, bosses may attack faster, strike harder, or perform more complicated attacks. These signs usually mean the fight is reaching its final moments and the boss's health is almost gone.
+
+
+Do Bosses have Phases in HK Silksong?
+Most bosses in Hollow Knight: Silksong fight in multiple phases, with each phase becoming more dangerous than the last. A clear sign that a boss is about to change phases is when it becomes stunned for a short moment and lets out a loud scream. This brief pause signals that the next part of the battle is about to begin.
+
+When a boss enters a new phase, it will often speed up its existing attacks or introduce new moves to its pattern. Some bosses may even combine different attacks at the same time, creating more complex and harder-to-avoid sequences.
+
+Knowing these signs helps you prepare for sudden shifts in the fight. If you hear the scream or see the boss stagger, stay alert because its next attacks will likely be faster, stronger, and more unpredictable.
+
+How do Mini-Bosses Differ from Main Bosses in Silksong?
+Unlike main Bosses, Mini-Boss names do not appear on the left hand side of the screen. While you may think Mini-Bosses can be easier than Main Bosses, this isn't the case. Some Mini-Bosses can be trickier to fight than main bosses. The only indicator you can have that you've encountered a Mini-Boss is when you no name appears but it shouts before the fight.
+
+How many Bosses are in HK Silksong?
+As of now, Hollow Knight: Silksong features 44 main bosses and 4 mini-bosses that have been discovered. This list is still a work in progress, so more bosses may be added or revealed in future updates. Bosses can be found across the many different locations in the game world, and it is common to encounter several bosses while exploring new areas. For a full overview of these locations, you can check the Locations page for detailed maps and descriptions.
+
+There are also a few exclusive bosses that only appear in Steel Soul Mode, such as the Summoned Saviour, which offers an extra challenge for players looking for a harder experience.
+
+ACT 1 BOSSES
+ 
+Moss Mother (mandatory) - Location: Moss Grotto - Drop: None
+Bell Beast (mandatory) - Location: The Marrow - Drop: Silk Heart; enables transport across Pharloom via Bellways
+Lace (mandatory) - Location: Deep Docks, after you get Swift Step - Drop: None
+Fourth Chorus (mandatory) - Location: Far Fields, after getting the Drifter's Cloak - Drop: None
+Sister Splinter (mandatory) - Location: Shellwood - Drop: Access to the Weaver statue with Cling Grip
+Widow (mandatory) - Location: Bellhart - Drop: Needolin
+Last Judge (mandatory) - Location: Blasted Steps - Drop: Access to the Citadel and Act 2
+Moorwing (optional) - Location: Greymoor, southwest part of the map - Drop: None
+Savage Beastfly (optional) - Location: Hunter's March, Chapel of the Beast - Drop: Beast Crest
+Skull Tyrant (optional) - Location: The Marrow, via The Terrible Tyrant Wish - Drop: Heavy Rosary Necklace
+Moss Mother Duo (optional) - Location: Weavenest Atla, west of the bench - Drop: Weavelight Tool
+Great Conchflies (optional) - Location: Blasted Steps, left side of the large room leading to the top - Drop: Access to the Pinstress and Sands of Karak
+Phantom (secret) - Location: Exhaust Organ, via Sinner's Road's western path through The Mist - Drop: Cross Stitch
+ 
+ 
+ACT 2 BOSSES
+ 
+Cogwork Dancers (mandatory) - Location: Cogwork Core - Drop: Starts the Threefold Song main quest
+Lace (mandatory) - Location: The Cradle - Drop: Silk Heart
+Grand Mother Silk (mandatory) - Location: The Cradle - Drop: None
+Trobbio (optional) - Location: Whispering Vaults, The Stage, via the west side of the Vaults - Drop: Claw Mirror Tool, Psalm Scroll
+Savage Beastfly (optional, repeat encounter) - Location: Far Fields, via the Savage Beastfly Wish - Drop: Mask Shard
+Groal the Great (optional) - Location: Bilewater - Drop: Seeker's Soul (in the hut in the next room)
+Broodmother (optional) - Location: The Slab, via The Wailing Mother Wish - Drop: Heavy Rosary Necklace
+Disgraced Chef Lugoli (optional) - Location: Sinner's Road, once you have Double Jump - Drop: Pickled Muckmaggot
+Forebrothers Signis and Gron (optional) - Location: Deep Docks, via a Simple Key on the locked door under the Forge Daughter's store - Drop: Shortcut to Forge Daughter, access to Diving Bell
+Raging Conchfly (optional) - Location: Sands of Karak, right before the Coral Tower - Drop: Access to Coral Tower, Conchcutter Tool
+Father of the Flame (optional) - Location: Wisp Thicket, reachable with Double Jump via Greymoor - Drop: Wispfire Lantern Tool
+Second Sentinel (optional) - Location: High Halls, at the end of the Final Audience Wish - Drop: Reserve Bind Tool
+Garmond and Zaza (optional) - Location: Whispering Vaults, hidden room below Songclave - Drop: None
+Shakra (optional) - Location: Greymoor, after completing the Trail's End Wish - Drop: None
+Unravelled (optional) - Location: Whiteward, after using the Surgeon's Key - Drop: Silk Heart
+First Sinner (optional) - Location: The Slab, after using the Key of the Apostate - Drop: Rune Rage
+ 
+ 
+ACT 3 BOSSES
+ 
+Shrine Guardian Seth (mandatory) - Location: Grand Gate, via a hidden passage west of the Underworks - Drop: None
+Nyleth (mandatory) - Location: Grand Gate, via a hidden passage west of the Underworks, use Elegy of the Deep - Drop: Pollen Heart
+Crust King Khann (mandatory) - Location: Coral Tower, Sands of Karak, use Elegy of the Deep - Drop: Encrusted Heart
+Skarrsinger Karmelita (mandatory) - Location: Far Fields, via a new path unlocked with Silk Soar from Hunter's March, use Elegy of the Deep - Drop: Hunter's Heart
+Lost Lace (mandatory) - Location: The Abyss, after gaining the Old Hearts and the Everbloom - Drop: None
+Bell Eater (optional) - Location: Any Bellway, likely Choral Chambers' Grand Bellway - Drop: Re-opens Bellways, unlocks Beastling Call
+Crawfather (optional) - Location: Greymoor, house on the east after receiving the Craw Summons - Drop: Craw Memento, Crawbell
+Palestag (optional) - Location: Lost Verdania, use Elegy of the Deep to access - Drop: Light orbs, needed to fight the Clover Dancers
+Clover Dancers (optional) - Location: Lost Verdania, use Elegy of the Deep to access - Drop: Conjoined Heart
+Gurr the Outcast (optional) - Location: Far Fields, via The Hidden Hunter Wish - Drop: Grass Doll, which gets you a Mask Shard
+Lost Garmond (optional) - Location: Blasted Steps, via Hero's Call Wish - Drop: Hero's Memento
+Voltvyrm (optional) - Location: Sands of Karak, east of the Coral Tower, accessible with Silk Soar - Drop: Volt Filament Tool
+Tormented Trobbio (optional) - Location: Whispering Vaults, The Stage, via Pain, Anguish and Misery Wish - Drop: Dark Mirror, which upgrades the Claw Mirror Tool
+Pinstress (optional) - Location: Mount Fay, via Fatal Resolve Wish - Drop: Pin Badge Tool
+Plasmified Zango (optional) - Location: Wormways - Drop: None
+Watcher at the End (optional) - Location: Sands of Karak, use Silk Soar in a secret nook next to a Memory Locket to reach a hidden area - Drop: Grey Memento
+ 
+ 
+MINI-BOSSES
+ 
+Craggler - Act 1 mini-boss
+Choir Clappers - Act 2 mini-boss
+Huge Flea - Act 2 mini-boss

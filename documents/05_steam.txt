@@ -1,0 +1,248 @@
+The Hunter's Journal is given by Nuu in Greymoor (Halfway Home). There are 237 total
+entries. Most enemies respawn when you sit on a bench or restart the game, except for
+bosses and special enemies. To earn the first reward you must defeat 100 different
+enemies. The entries for Shakra, Garmond & Zaza, Palestag, Lost Garmond, Lost Lace, and
+Summoned Saviour are NOT required for the True Hunter achievement (the Summoned Saviour
+is Steel Soul Mode only). After completing all required entries, talk to Nuu again to
+receive the Hunter's Memento and unlock the achievement.
+
+Entries marked with a note have a special spawn or unlock condition.
+
+List of bugs:
+001 - Mossgrub
+002 - Massive Mossgrub
+003 - Mossmir
+004 - Moss Mother
+005 - Aknid
+006 - Skull Scuttler
+007 - Skullwing
+008 - Skull Brute
+009 - Skull Tyrant
+010 - Kilik
+011 - Beastfly
+012 - Savage Beastfly
+013 - Caranid
+014 - Vicious Caranid
+015 - Hardbone Hopper
+016 - Hardbone Elder
+017 - Tarmite
+018 - Mawling
+019 - Marrowmaw
+020 - Hoker
+021 - Flintbeetle (only spawns after beginning the Volatile Flintbeetles Wish)
+022 - Rhinogrund
+023 - Gromling
+024 - Grom
+025 - Bell Beast
+026 - Pilgrim Groveller
+027 - Pilgrim Pouncer
+028 - Pilgrim Hornfly
+029 - Pilgrim Hulk
+030 - Pilgrim Bellbearer
+031 - Winged Pilgrim
+032 - Elder Pilgrim (spawns based on the enemy pattern in this area after taking the Crest of Wanderer; sit on the bench at the Ruined Chapel and wall-jump into the area to trigger the correct pattern)
+033 - Winged Pilgrim Bellbearer
+034 - Pilgrim Hiker
+035 - Pilgrim Guide
+036 - Overgrown Pilgrim
+037 - Covetous Pilgrim
+038 - Snitchfly
+039 - Lavalug
+040 - Lavalarga
+041 - Smelt Shoveller
+042 - Flintstone Flyer
+043 - Flintflame Flyer
+044 - Smokerock Sifter
+045 - Deep Diver
+046 - Forebrothers Signis & Gron
+047 - Cragglite
+048 - Craggler
+049 - Brushflit
+050 - Fertid
+051 - Flapping Fertid
+052 - Fourth Chorus
+053 - Skarrlid
+054 - Skarrwing
+055 - Skarr Scout
+056 - Skarr Stalker
+057 - Spear Skarr
+058 - Skarrgard
+059 - Gurr the Outcast (during The Hidden Hunter Wish, Act 3 only)
+060 - Last Claw (only appears during the fight with Skarrsinger Karmelita)
+061 - Skarrsinger Karmelita
+062 - Mite
+063 - Fluttermite
+064 - Mitemother
+065 - Dreg Catcher
+066 - Silk Snipper
+067 - Thread Raker
+068 - Moorwing
+069 - Wisp
+070 - Burning Bug
+071 - Father of the Flame
+072 - Craw
+073 - Tallcraw
+074 - Squatcraw
+075 - Craw Juror
+076 - Tallcraw Juror (exclusive to the Crawfather boss fight)
+077 - Squatcraw Juror (exclusive to the Crawfather boss fight)
+078 - Crawfather (needs the Craw Summons item; reach Act 3, complete SEEK: Awaiting the End, and hit the lever inside the Craw house on Craw Lake; then there is a chance to receive the summons each time Hornet rests at certain benches in Bellhart, Bilewater, Far Fields, Shellwood, Sinner's Road, and Wisp Thicket)
+079 - Muckmaggot (can be killed with the Pimpillo tool or Silk Skills enhanced by Volt Filament)
+080 - Slubberlug
+081 - Muckroach
+082 - Bloatroach
+083 - Roachcatcher
+084 - Roachfeeder
+085 - Roachkeeper
+086 - Roachserver
+087 - Disgraced Chef Lugoli
+088 - Wraith
+089 - Mothleaf Lagnia
+090 - Miremite
+091 - Swamp Squit
+092 - Spit Squit
+093 - Stilkin
+094 - Stilkin Trapper
+095 - Groal the Great
+096 - Barnak
+097 - Ductsucker
+098 - Pond Skipper
+099 - Pondcatcher
+100 - Shellwood Gnat
+101 - Wood Wasp
+102 - Splinter
+103 - Splinterhorn
+104 - Splinterbark
+105 - Sister Splinter
+106 - Phacia
+107 - Pollenica
+108 - Gahlia
+109 - Shrine Guardian Seth
+110 - Nyleth
+111 - Furm
+112 - Winged Furm
+113 - Pharlid
+114 - Pharlid Diver
+115 - Shardillard
+116 - Sandcarver (can be killed with the Pimpillo tool)
+117 - Squirrm (only appears after using the Needolin for a while)
+118 - Judge
+119 - Last Judge
+120 - Coral Furm
+121 - Driznit
+122 - Driznarga
+123 - Pokenabbin
+124 - Conchfly
+125 - Great Conchfly
+126 - Crustcrawler
+127 - Crustcrag
+128 - Kai
+129 - Spinebeak Kai
+130 - Steelspine Kai
+131 - Yuma
+132 - Yumama
+133 - Karaka
+134 - Kakri
+135 - Yago
+136 - Karak Gor
+137 - Alita
+138 - Corrcrust Karaka
+139 - Crust King Khann
+140 - Watcher at the Edge (playing the Needolin will awaken him and start the fight)
+141 - Voltvyrm
+142 - Drapefly
+143 - Drapelord (leave and re-enter the room repeatedly to try to make one spawn)
+144 - Drapemite
+145 - Giant Drapemite
+146 - Underworker
+147 - Underscrub
+148 - Undersweep
+149 - Underpoke
+150 - Underloft
+151 - Undercrank
+152 - Envoy
+153 - Choir Pouncer
+154 - Choir Hornhead
+155 - Choir Bellbearer
+156 - Choir Flyer
+157 - Choir Elder
+158 - Choristor
+159 - Reed
+160 - Grand Reed
+161 - Choir Clapper
+162 - Clawmaiden (summoned by the Envoy)
+163 - Memoria
+164 - Minister
+165 - Maestro
+166 - Second Sentinel (can only be fought after beginning the Final Audience Wish)
+167 - Dreg Husk
+168 - Dregwheel (after defeating The Unravelled, can be summoned by playing the Needolin in the arena)
+169 - Surgeon
+170 - Mortician
+171 - The Unravelled (requires the Surgeon's Key)
+172 - Cogwork Underfly
+173 - Cogwork Hauler
+174 - Cogwork Crawler
+175 - Cogworker
+176 - Cogwork Spine
+177 - Cogwork Choirbug
+178 - Cogwork Cleanser
+179 - Cogwork Defender
+180 - Cogwork Clapper
+181 - Cogwork Dancers
+182 - Vaultborn
+183 - Lampbearer
+184 - Scrollreader
+185 - Vaultkeeper
+186 - Trobbio
+187 - Tormented Trobbio (Act 3, part of the Pain, Anguish and Misery Wish)
+188 - Penitent
+189 - Puny Penitent
+190 - Freshfly (spawned by the Broodmother during her fight)
+191 - Scabfly
+192 - Guardfly
+193 - Wardenfly
+194 - Broodmother (during The Wailing Mother Wish)
+195 - Driftlin
+196 - Mnemonid
+197 - Mnemonord
+198 - Servitor Ignim
+199 - Servitor Boran
+200 - Winged Lifeseed
+201 - Plasmid
+202 - Plasmidas
+203 - Plasmified Zango
+204 - Leaf Glider
+205 - Leaf Roller
+206 - Pendra
+207 - Pendragor
+208 - Nuphar
+209 - Cloverstag
+210 - Palestag (not required)
+211 - Kindanir
+212 - Verdanir
+213 - Escalion
+214 - Clover Dancers
+215 - Shadow Creeper
+216 - Shadow Charger
+217 - Gloomsac
+218 - Gargant Gloom
+219 - Void Tendrils (read the lore to complete the hunter's notes)
+220 - Void Mass
+221 - Wingmould (found inside Red Memory after obtaining 3 Old Hearts)
+222 - Garpid
+223 - Imoba
+224 - Skrill
+225 - Bell Eater (in Act 3, when attempting to use one of the Bell Stations)
+226 - Huge Flea
+227 - Shakra (not required; after completing the Trail's End Wish; cannot be done if the Flea Caravan is still in the area, or after starting Act 3)
+228 - Summoned Saviour (not required; Steel Soul Mode only; appears after finding all Resting Sites for the A Vassal Lost Wish)
+229 - Garmond and Zaza (not required)
+230 - Lost Garmond (not required; fought during the Hero's Call Wish in Act 3)
+231 - Pinstress (during the Fatal Resolve Wish)
+232 - Widow
+233 - First Sinner
+234 - Phantom
+235 - Lace
+236 - Grand Mother Silk
+237 - Lost Lace (not required)

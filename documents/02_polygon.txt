@@ -1,0 +1,11 @@
+Are you finding Hollow Knight: Silksong too easy? Did you clock it already and fancy a new challenge? Probably not, but developer Team Cherry has you covered anyway.
+
+It turns out the game features a hidden hard mode of sorts. Steel Soul is a hardcore permadeath mode that locks you out of your save file after a single death. "No reviving. Death is permanent," reads the description.
+
+Steel Soul mode was present in the original Hollow Knight and unlocked after beating the game once. But Team Cherry has included a secret method to unlock Silksong's Steel Soul mode at any point, as fans discovered almost immediately after the game's launch.
+
+To unlock Steel Soul mode in Silksong, select the Extras option on the main menu. Then, when on the Extras screen, enter these commands: up, down, up, down, left, right, left, right (which is similar to, but not quite, the famous Konami code). A flash and a thudding sound will let you know the code has been recognized.
+
+Then, when selecting a fresh game file and starting a new game, you'll be offered a choice between Classic and Steel Soul. If you die in a Steel Soul run, the save file will be marked as "Defeated." Select it and you're given the option to clear the file and start again.
+
+It's a simple enough mode, but given the game's already notorious difficulty (which Team Cherry has already pledged to tone down slightly), it's a monumental challenge for anyone hardy enough.

@@ -1,0 +1,193 @@
+Following this guide on a new playthrough leaves you able to fully explore every area
+accessible before leaving Act 1 and starting Act 2. The ability order covered is:
+Silkspear, fast travel (Bell Beast), Swift Step, Drifter's Cloak, Cling Grip, and Needolin.
+
+
+BEGINNER BASICS (TUTORIAL TO BONE BOTTOM)
+
+Bind to your pin and use basic abilities to reach the first bench. Explore a little for free
+Shell Shards and Rosaries, the game's two currencies. Shell Shards are a lesser currency
+used as donations for certain quests and to refill offensive tools found later. Rosaries are
+the main currency for buying from vendors and are dropped on death; you reacquire them by
+returning to where you died and striking the cocoon, but dying a second time before
+recovering them loses them forever.
+
+The first bench is in the Ruined Chapel. Benches restore health, manually save the game, and
+set your respawn point. Just ahead is the first boss, the Moss Mother. Use Hornet's dive to
+get extra attacks, and build silk with successful strikes; when the silk meter is full and
+glowing, hold the input to restore up to 3 health. Getting struck mid-heal causes damage,
+fails the heal, and loses the silk being used, so only heal when you have a few safe seconds.
+
+After defeating the Moss Mother, go west and up the large bead rope, then east; a cutscene
+and an NPC give you The Great Citadel objective, the primary Act 1 goal. Continue east into
+Bone Bottom, the first town, and rest at the bench. Speak with the inhabitants (one is a
+merchant), then head east into The Marrow.
+
+
+MAPS AND THE SHAKRA NPC (THE MARROW)
+
+Move through The Marrow going up and east toward the boss chamber. Several enemies spawn
+there and must all be defeated to drop into a new chamber. Move west to unlock a gate back to
+Bone Bottom, then east past an offering bowl that can be paid (Rosaries) to unlock a fancy
+bench (optional). Continue east, then up and west, to a chamber with temporary platforms;
+scale them to the top-west corner and follow the path toward an NPC singing. Hit a small
+lever to open the way, grab free Rosaries and Shell Shards, and meet Shakra, who sells your
+first maps and map-making supplies. Maps and the compass aren't strictly necessary but make
+navigation much easier.
+
+OPTIONAL EARLY ROSARY FARM (NEAR SHAKRA / MOSSHOME)
+Up and west of Shakra is a path to the Mosshome zone. Move west along the elevated platform
+past projectile-shooting bugs (their projectiles can be destroyed), hit a lever to open a
+path below, drop in, and move east on the elevated section to a secluded chamber with a
+bench; a lever here opens a shortcut back to Shakra. Farming loop: from this bench, move west
+into Mosshome, defeat two easy enemies (5 Rosaries each), drop to the bottom floor for 3 more
+enemies toward the bottom-east exit, then loop back to the bench. You get about 25 Rosaries
+every 30 seconds. Equip the Magnetite Brooch if you have it.
+
+
+SILKSPEAR (FIRST ABILITY)
+
+From Shakra, move up and west into Moss Grotto, then to the top-west corner into a new
+chamber. Move far east avoiding traps, then up and west to a weaver altar; inspecting it
+unlocks the Silkspear. It costs silk to use and cuts through thick webbing to open new areas
+(for example, a Frayed Rosary String to the west). Dropping down and moving east leads to
+more webs; to the east is a bench, plus a Shaman NPC who gives the Berry Picking Wish
+(optional side quest).
+
+
+FAST TRAVEL (BELL BEAST BOSS, SILK HEART)
+
+West of the Shaman, drop down and move west back toward a previous chamber, then to Shakra (a
+bench here makes a closer spawn point for the boss). Free the Bell Beast with the Silkspear,
+then defeat it. Its attacks deal 2 damage each but it has only 3 telegraphed moves, signaled
+by the ground rumble before it emerges:
+- Medium-height, wide plume: it charges (easiest time to deal damage).
+- Wide but much taller plume: a leap attack; stay under it, wait for the landing, then strike.
+- Narrow plume: it throws bouncing bells out to the sides (hard to punish; watch the bells).
+Phase 2 is similar but adds an extra bell drop on each of the 3 major moves.
+
+After the fight, interact with the floating orb, do a short platforming section, then a
+second orb to Consume a Silk Heart (small regenerative silk capacity). Return to the Bellways
+and jump up-right to unlock your first fast-travel post (to/from Bone Bottom). Strike the
+lever in the next chamber east to unlock a bench and the path to a new region.
+
+
+SWIFT STEP (THE MARROW PRISON TO DEEP DOCKS)
+
+Start at the bench just east of The Marrow bellways. Move east through The Marrow (spike
+pits, crumbling platforms). In the second horizontal chamber you can reach an upper area by
+dive-attacking off bouncy red flowers, but the bottom route works; drop down a few levels and
+follow the sign east into a jail with a free bench. From there go down and east into Deep
+Docks (watch for spike pits, falling rocks, and lava). Follow Shakra's singing for the Deep
+Docks Map (a sign-posted bench here costs Rosaries and is skippable).
+
+To get Swift Step, head up and east through the major portion of Deep Docks. Exit at the
+northeast corner (hit a lever to reach it). In the next chamber move east, jumping along hot
+coal surfaces to avoid burn damage, then hit an explosive core to open the path. There is
+another purchasable bench here worth considering before the upcoming enemy-wave encounter.
+From that bench, go back west, then up and east to a narrow corridor; moving west reaches the
+boss chamber with multiple enemy waves. Afterward, move west and drop into a new chamber,
+watch for spike pits, strike the explosive rock at the southeast corner for a shortcut back,
+then take the southwest exit and reach an altar; interact to unlock Swift Step.
+
+
+DRIFTER'S CLOAK (FLEXIBLE SPINES QUEST)
+
+From the Swift Step altar in Deep Docks, move west toward Shakra. (Optional, recommended:
+follow the bench sign and drop into a nearby chamber, clear a boss room of enemy waves to
+unlock a free bench near the next boss and a vendor selling the powerful Sting Shard tool.)
+From the free bench, move up to the previous chamber and use Swift Step to open the boss
+chamber to the east, where you fight Lace, a nimble foe that teaches the dodge function of
+Swift Step. After Lace, move east and strike the lever to unlock a bench and gate.
+
+Move east into Far Fields to the Bellways station (defeat humanoid foes along the way for
+Rosaries if you have fewer than 30). Use the Sprint and air-dash functions of Swift Step to
+stay on the upper path; exit top-east to the Far Fields Bellways and useful bench. (Optional
+Far Fields Rosary farm: from the bench, go west, cross the top platforms past two explosive
+clusters, drop and defeat the Skarr Scout west for 13 Rosaries, then Silkspear the paired
+Skarr Scout and Skarr Stalker east for just over 50 Rosaries total; save and quit to return
+to the bench and repeat.)
+
+From the Far Fields Bellways, move west and drop down hugging the eastern wall to reach
+Shakra for the Far Fields Map. Then move west, drop, and head east (watch the lava) through a
+long chamber, then up to the Hut of the Seamstress (free bench). Speaking with the Seamstress
+gives the Flexible Spines quest, required for the Drifter's Cloak. Move down and east to find
+Hokers: strike one, avoid the spines it shoots, then strike the loose spines to harvest them.
+You need 25 Spine Cores. Three Hokers are easily accessed here; leave and re-enter the
+chamber to respawn them and repeat until you have 25. Return to the Seamstress's Hut and turn
+them in to receive the Drifter's Cloak, which hovers in midair and rides updraft shafts found
+throughout Pharloom.
+
+
+CLING GRIP (FOURTH CHORUS BOSS, THEN SHELLWOOD AND SISTER SPLINTER)
+
+From the Seamstress's Hut, move west back toward the Far Fields Bellways. The Fourth Chorus
+boss interrupts the trip and is a chance to test the Drifter's Cloak: use it to avoid
+horizontal swipes, and in the final phase ride the air streams on either side to hit the two
+explosive cores, instantly ending the fight.
+
+Go west, ride the air streams back to the Bellways bench, then ride a series of air streams
+upward through the large vertical tube, striking explosive cores to open the way. At a closed
+metal gate, follow the bench sign east (a paid structure with a vendor locks again on exit,
+so buy everything on the first visit). Move east, loop up and west along the top to get above
+the gate, hit the lever to open it, then ascend the tube past more cores and a lever, arriving
+in Greymoor. East of here is Shakra (Greymoor map) and a free bench.
+
+Move west through Greymoor toward the next zone. Past a cave of pilgrim-style enemies is the
+Halfway Home (free bench); upstairs, speak with Nuu for the quest to defeat Pharloom's bugs
+and the Hunter's Journal to track them. Continue west to a small arena (easy enemies), then
+unlock shortcuts before the Moorwing boss, since you may run back several times. In the tower
+structure, go up past scissor-wielding bugs and a spinning wheel, take the lower of two west
+doors, descend and break a shortcut, drop down, hit a lever east for a major shortcut, then go
+west and follow the town signs to the Moorwing.
+
+MOORWING BOSS TIPS
+A very difficult boss (took the guide author 10+ attempts). In phase two, all attacks get
+substantial upgrades plus one new move:
+- The flurry of leg attacks is NOT upgraded, so it remains a top opportunity to deal damage.
+- A new move launches two blades simultaneously; stay under Moorwing and time jumps to also
+  deal damage.
+- The swoop attack is now followed by a single blade launch.
+- The blade-launch attack now uses two blades; the second curves up earlier and circles back
+  down to strike the ground. This is the most dangerous move, so get far away when telegraphed.
+Note: this fight does not occur here if you completed the Flea questline and traveled with
+them to arrive for the first time.
+
+After Moorwing, move west into Haunted Bellhart, rest at the bench (note: quitting while
+sitting here temporarily traps you in silk strands on reload). Move west into Shellwood,
+ascend the large chamber in an S shape to the top-west exit, then drop west into a boss
+chamber of enemy waves (the stickbugs are worst; store silk and hit them with Silkspears).
+Go west and up to a purchasable bench (60 Rosaries) that serves as a checkpoint for two boss
+fights. Down and west of the bench, ride a lift down to Shakra for the Bellhart and Shellwood
+maps. Then go up the platforming section (nail-bounce off white flowers) to the top-east
+exit, up and east through the next exit, then activate the lift near the top-east exit as a
+shortcut back to the bench.
+
+To reach Sister Splinter, ride the lift up, take the eastern exit, and platform to the
+top-west exit into the boss chamber. Sister Splinter herself isn't too hard: destroy the
+splinters she makes to keep room to maneuver and hit her. The danger is the adds she spawns,
+best removed with Silkspears or ranged tools. After defeating her, move west, drop briefly,
+then up to the top-west exit; in the next chamber move west, break vines, and needle-pogo up
+to the top-east exit to reach the altar that unlocks Cling Grip (wall jump).
+
+
+NEEDOLIN (WIDOW BOSS)
+
+Start at the bench near Sister Splinter. Ride the elevator east up, or wall-jump up. Move
+through the northeast passage, then all the way east; access a new area by wall-jumping up to
+piles of bells and smacking through them. Move down and east past new enemy types, then west
+and down; between two winged furms is a hidden breakable wall. Beyond it is a hole - jump over
+it for now and move west through another hidden wall to open a shortcut back toward the bench
+by breaking vines at the west end.
+
+Heal at the bench if needed, return east through the last chamber, drop down a couple of holes
+and move east to the Widow boss. Widow is comparable to Moorwing in difficulty; not all
+attacks deal double damage but enough do, and it's a "death by a thousand cuts" fight. Phase
+two is frantic at first but more predictable: Widow drops vertical or diagonal bells a few
+times, then does a flurry attack; once you learn the rhythm, phase two gets easier. After
+defeating Widow, plunge your needle and bind to unlock the Needolin. A short platforming
+section exits a dream sequence; after waking, hit the nearby lever to unlock a bench and free
+Bellhart town from its curse.
+
+More mobility and traversal items exist, but only after starting Act 2. For now you can fully
+explore Act 1; if you can't access an area, it's because it requires Act 2 progression.

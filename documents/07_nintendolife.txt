@@ -1,0 +1,125 @@
+Silksong is a large Metroidvania, so it is easy to get lost. Pharloom has multiple biomes
+that hide secret paths and items. This guide gives a recommended route for each act,
+focusing on the critical path toward the end of each act and the end of the game, while
+noting where you can branch off to explore.
+
+
+ACT 1 RECOMMENDED ROUTE
+
+Recommended order for straight progression (not including optional Crests or Tools):
+1. Moss Grotto
+2. Bone Bottom
+3. The Marrow
+4. Deep Docks
+5. Far Fields
+6. Greymoor
+7. Bellhart
+8. Shellwood
+9. Blasted Steps
+
+You can enter Wormways early if you have a Simple Key, but it is much easier to explore
+once you have the Cling Grip Ancestral Art, so do it after beating Sister Splinter at the
+earliest.
+
+You can reach Hunter's March as early as The Marrow, but you cannot progress through it
+without the Drifter's Cloak, and the enemies and boss there are much easier once you have
+Cling Grip.
+
+Weavenest Atla is a very small area where you can upgrade your Hunter Crest, but it is
+only accessible after defeating Widow, which you should do at the end of Shellwood (you
+naturally loop back to Bellhart after getting Cling Grip).
+
+The Slab is entirely optional at this point and is actually closer to The Citadel than the
+rest of Pharloom. You may be captured by a bug in Pharloom, but you only have to explore
+this jail area much later.
+
+DECISION: Should I go through Blasted Steps or Sinner's Road?
+Blasted Steps is the recommended way to reach the end of Act 1. It is west of Shellwood
+and is much easier to explore than Sinner's Road. Sinner's Road is an alternate, harder
+path that takes you through The Mist and the Exhaust Organ; you get a new Silk Skill for
+defeating the boss inside the Organ, but The Mist is unpleasant. However, the boss at the
+end of Blasted Steps is tricky and has a nasty run-back you will repeat often, so weigh
+that trade-off.
+
+
+ACT 2 RECOMMENDED ROUTE
+
+In Act 2 the world opens up with more traversal tools and Ancestral Arts. Recommended
+order around The Citadel for normal progression:
+1. Choral Chambers
+2. First Shrine / Songclave
+3. Cogwork Core (bottom half)
+4. Whispering Vaults (for the Vaultkeeper's Melody)
+5. Underworks (for the Clawline Ancestral Art)
+6. Mount Fay (for Double Jump / Faydown Cloak)
+7. Cogwork Core (top half, for the Architect's Melody)
+8. High Halls (for the Conductor's Melody)
+9. The Cradle - Final Boss
+
+Variant: if you entered the Grand Gate and started Act 2 from the Blasted Steps, you
+automatically end up in the Underworks first; make your way through there before returning
+to the Choral Chambers and heading to the First Shrine.
+
+After you defeat the Cogwork Dancers (west of the First Shrine), you receive a quest to
+acquire the Threefold Melody. As soon as you get the Vaultkeeper's Melody, go get the next
+two traversal skills, Clawline and the Faydown Cloak (Double Jump); these two blow the rest
+of the map wide open.
+
+If you have not yet explored The Slab (because you were not captured in Act 1), do it on
+the way to Mount Fay. After climbing the snowy mountain, Memorium, Sands of Karak, and
+Wisp Thicket all become accessible. Whiteward is another optional area you can do whenever
+(non-essential, though a Wish eventually takes you there).
+
+DECISION: Which Threefold Melody should I get first?
+Recommended order:
+1. Vaultkeeper's Melody - needs no additional skills, so the Whispering Vaults is the
+   easiest starting point (you must defeat a boss on the way).
+2. Architect's Melody - needs at least Clawline to reach the top of the Cogwork Core;
+   grabbing Double Jump first is also useful for the puzzle.
+3. Conductor's Melody - the High Halls requires both Clawline and Double Jump, and this is
+   put last because it may be one of the hardest challenges in the game: a ten-wave combat
+   trial. Bring as many Mask Shards, Spool Fragments, and Needle Upgrades as you can.
+
+Once you have all three melodies, talk to the trio of statues in the middle of the Cogwork
+Core and play their songs; the elevator then opens to the final two bosses (for the normal
+ending).
+
+Bilewater is a totally optional area unless you are going for the true ending, so defeat
+the final boss before going to Bilewater. For the True Ending and Act 3, see the separate
+Act 3 unlock guide.
+
+
+ACT 3 RECOMMENDED ROUTE
+
+Act 3 starts with you compromised. Enemies are more dangerous, paths are blocked, and some
+friends may no longer be friends.
+
+After escaping The Cradle, you wake in Songclave with a new goal: free Pharloom from the
+Void. Head to the Moss Grotto first; you must fight a boss before you can ride the Bell
+Beast again. After Moss Grotto, head to The Abyss via Deep Docks, where you get an
+important Silk Skill (Silk Soar). Back in Moss Grotto, you are given a new Needolin song and
+a task to gather three Old Hearts. You can do these immediately, but it is highly
+recommended to first max out health by collecting all Mask Shards, getting every Spool
+Fragment, and fully upgrading your Needle. After getting the three Hearts, return to the
+Shamans, head back to Deep Docks, re-enter the Void, and fight the final boss.
+
+DECISION: What's the best order to collect the Old Hearts in?
+You can get all three in any order; each is challenging in different ways and requires the
+Elegy for the Deep song on the Needolin to access. Preferred order:
+1. Heart of the Woods - by far the easiest, but the most hidden. Return to the collapsed
+   lift shaft just west of the Underworks, use Silk Soar to find a broken wall on the left.
+   Two bosses here, but easier than the other trials; the second is a gimmick boss, so
+   bring long-range Tools.
+2. Heart of Might - at the Coral Tower (Sands of Karak, where you fought the Vengeful
+   Conchfly). Climb a battle tower and win three stages: 5 waves, then 10, then 15. A
+   shortcut after the last phase leads to a shorter trial and a boss. The boss may be the
+   easiest of the three, but the battle tower makes it harder to reach.
+3. Heart of the Wild - held by one of the hardest bosses in the game, which is why it is
+   recommended last. Access it through Hunter's March using Silk Soar by the statue of the
+   Ant's leader, unlocking a new section of Far Fields. A few easy combat trials precede
+   the boss; the boss is not easy.
+
+Secret fourth Old Heart: if you freed the Green Prince in Sinner's Road, you gain access to
+Verdania (a small area east of Greymoor). Defeat the boss there for the Conjoined Heart,
+which can substitute for any one of the three Hearts. Even if you do not use it to access
+the final boss, the fight is highly recommended.
