@@ -7,6 +7,11 @@ store and a language model answers using only those chunks, citing the sources i
 
 ---
 
+## DEMO VIDEO
+https://drive.google.com/file/d/1ZN4YYClE37cUSN4j-LfvAS7xC_6hAfSZ/view?usp=drive_link
+
+---
+
 ## Domain
 
 This system covers **guides and walkthroughs for *Hollow Knight: Silksong*** — boss
